@@ -1,0 +1,14 @@
+{
+    "extends": "@repo/ts-config/base.json",
+    "compilerOptions": {
+        "paths": {
+            "~/*": ["./*"],
+            "@/*": ["./app/*"],
+            "#/*": ["./src/*"]
+        },
+        "plugins": [{ "name": "next" }],
+        "types": ["./src/types/global.d.ts"]
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".storybook"],
+    "exclude": ["node_modules", ".next", "build", "dist", "packages/routes"]
+}

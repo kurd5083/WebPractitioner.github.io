@@ -1,0 +1,32 @@
+{
+    "name": "@repo/core",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "add": "npx shadcn@latest add"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@base-ui/react": "1.0.0",
+        "@hookform/resolvers": "5.1.1",
+        "react-hook-form": "7.60.0",
+        "sonner": "2.0.6",
+        "zod": "4.0.5"
+    },
+    "peerDependencies": {
+        "@testing-library/react": "^16",
+        "@testing-library/user-event": "^14",
+        "@vitest/browser": "*",
+        "class-variance-authority": "^0",
+        "clsx": "^2",
+        "lucide-react": "*",
+        "next": "^16",
+        "react": "^19",
+        "react-dom": "^19",
+        "tailwind-merge": "^3",
+        "vitest": "^4"
+    }
+}
