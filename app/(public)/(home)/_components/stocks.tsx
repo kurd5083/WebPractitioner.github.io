@@ -25,7 +25,7 @@ const slides = [
 ]
 
 export function Stocks() {
-    const [isMobile, setIsMobile] = useState<boolean | null>(false)
+    const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
     useEffect(() => {
         const checkWidth = () => setIsMobile(window.innerWidth < 640)
@@ -33,6 +33,7 @@ export function Stocks() {
         window.addEventListener('resize', checkWidth)
         return () => window.removeEventListener('resize', checkWidth)
     }, [])
+    if (isMobile === null) return null;
 
     if (isMobile) {
         return (
@@ -41,12 +42,7 @@ export function Stocks() {
                 slidesPerView={'auto'}
                 grabCursor
                 allowTouchMove={true}
-                pagination={{
-                    clickable: true,
-                    renderBullet: (className) => {
-                        return `<span class="${className} w-3 h-3 bg-gray-300 rounded-full inline-block transition-transform duration-300 -top-5"></span>`;
-                    }
-                }}
+                pagination={{ clickable: true }}
                 modules={[Pagination]}
                 className="!pb-8 !px-4 mt-15"
             >
