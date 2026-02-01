@@ -1,53 +1,83 @@
-# NextJS Starter
+🍕 WebPractitioner — Pizza Menu App
 
-A robust boilerplate for quickly building web applications with Next.js.
+Интерактивное меню пиццерии с фильтрацией, выбором размера и добавлением в заказ.
+Проект реализован на Next.js, React, TypeScript, TailwindCSS, Framer Motion и Zustand.
 
-## 🪄 Features:
+🚀 Технологии
 
-- Next 15+ (app router, server components)
-- React 19
-- Typescript
-- Tailwind
-- ESLint
-- Prettier
-- Lefthook
-- Commitizen
-- Vitest
-- Playwright
-- Lint-staged
-- Storybook
-- Sentry
-- Rsdoctor
-- Nuqs
-- Kubb API Codegen
-- Design tokens (style-dictionary)
-- Env validation
+Next.js
 
-## 🚀 Get started
+React
 
-1. Install the project using `npx create-next-app -e https://github.com/webpractik/nextjs-starter --use-npm`
-2. Copy environment variables to .env (`cp .env.example .env`) and configure them.
-3. Start the development server with `npm run dev`
+TypeScript
 
-## 🎯 Deploy
+TailwindCSS
 
-- **Node:** `^22`
-- **Npm:** `^10`
-- **App Port:** `3000`
-- **Healthcheck:** `/api/health`
-- **Ready:** `/api/ready`
-- **Prometheus Metrics:** `/api/metrics`
+Framer Motion
 
-## Run production mode:
+Zustand
 
-- `npm ci`
-- `npm run build`
-- `npm run prod`
+📦 Установка
 
-## 📦 Additional utilities:
+Клонировать репозиторий:
+git clone git@github.com:kurd5083/WebPractitioner.git
+или
+git clone https://github.com/kurd5083/WebPractitioner.git
 
-- [nanoid](https://www.npmjs.com/package/nanoid) - Generate unique IDs
-- [lodash-es](https://lodash.com/docs) - Utility library
-- [react-use](https://github.com/streamich/react-use#readme) - Collection of hooks for React
-- [isomorphic-dompurify](https://www.npmjs.com/package/isomorphic-dompurify) - DOM sanitization library
-- [clsx](https://www.npmjs.com/package/clsx) - Utility for constructing CSS class names
+Перейти в папку проекта:
+cd WebPractitioner
+
+Установить зависимости:
+npm install
+(или yarn install / pnpm install)
+
+🛠 Запуск
+
+Режим разработки:
+npm run dev
+
+Приложение будет доступно по адресу:
+http://localhost:3000
+
+Production сборка:
+npm run build
+
+Запуск production версии:
+npm run start
+
+📁 Структура проекта
+
+src/components — UI компоненты
+src/store — Zustand store (корзина/заказы)
+src/utils — данные и утилиты
+src/icons — SVG иконки
+src/app (или pages) — маршруты Next.js
+
+⚙️ Скрипты
+
+npm run dev — запуск dev сервера
+npm run build — production сборка
+npm run start — запуск production сервера
+npm run lint — проверка линтером
+
+✨ Возможности
+
+Фильтрация пицц по категориям
+
+Выбор размера
+
+Динамический пересчёт цены
+
+Анимации через Framer Motion
+
+Управление корзиной через Zustand
+
+Адаптивная верстка
+
+🔐 Работа с Git
+
+Если используется SSH:
+git remote set-url origin git@github.com:kurd5083/WebPractitioner.git
+
+После первой настройки:
+git push -u origin main
