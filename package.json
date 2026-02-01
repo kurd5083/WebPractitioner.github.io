@@ -23,12 +23,10 @@
         "jscpd": "npx jscpd",
         "clean": "rimraf .next",
         "storybook": "storybook dev",
-        "build-storybook": "storybook build",
-        "build:netlify": "next build && netlify-plugin-nextjs"
+        "build-storybook": "storybook build"
     },
     "dependencies": {
         "@hookform/resolvers": "5.2.2",
-        "@netlify/next": "1.4.9",
         "@repo/api": "*",
         "@repo/core": "*",
         "@repo/design-tokens": "*",
