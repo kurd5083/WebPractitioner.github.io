@@ -20,9 +20,9 @@ Zustand
 📦 Установка
 
 Клонировать репозиторий:
-git clone git@github.com:kurd5083/WebPractitioner.git
+git clone git@github.com:kurd5083/WebPractitioner.github.io.git
 или
-git clone https://github.com/kurd5083/WebPractitioner.git
+git clone https://github.com/kurd5083/WebPractitioner.github.io.git
 
 Перейти в папку проекта:
 cd WebPractitioner
@@ -77,7 +77,7 @@ npm run lint — проверка линтером
 🔐 Работа с Git
 
 Если используется SSH:
-git remote set-url origin git@github.com:kurd5083/WebPractitioner.git
+git remote set-url origin git@github.com:kurd5083/WebPractitioner.github.io.git
 
 После первой настройки:
 git push -u origin main
