@@ -81,7 +81,7 @@ export function Order() {
 										key={item.size}
 										initial={{ opacity: 0, x: -80, rotate: -180 }}
 										transition={{ duration: 1, ease: 'easeInOut' }}
-										whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+										animate={{ opacity: 1, x: 0, rotate: 0 }}
 										className={`relative z-10 ${item.size == 20 ? "w-19 h-19" : item.size == 30 ? "w-22 h-22" : "w-26 h-26"} ml-1 mt-1  object-cover`} src={item.img} alt={`${item.name} пицца`}
 									/>
 								</div>
