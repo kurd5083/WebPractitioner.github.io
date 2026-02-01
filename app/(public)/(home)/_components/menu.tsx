@@ -118,7 +118,7 @@ export function Menu() {
                                 key={selectedSizes[pizza.id]?.size}
                                 initial={{ opacity: 0, x: isMobile ? -80 : -180, rotate: -180 }}
                                 transition={{ duration: 1, ease: 'easeInOut' }}
-                                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                                animate={{ opacity: 1, x: 0, rotate: 0 }}
                                 className={`relative z-10 ${selectedSizes[pizza.id]?.size == 20 ? "w-19 h-19 sm:w-38 sm:h-38" : selectedSizes[pizza.id]?.size == 30 ? "w-22 h-22 sm:w-45 sm:h-45" : "w-26 h-26 sm:w-50 sm:h-50"} ml-1 mt-1 sm:ml-2 sm:mt-2  object-cover`} src={pizza.image} alt="pizza img"
                             />
                         </div>
